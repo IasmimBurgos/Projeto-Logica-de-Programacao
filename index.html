@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Pedidos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💿 Budeguinha de Jão e Ias</h1>
+        <p>Gerenciamento de pedidos de Discos!</p>
+        
+        <div class="form-group">
+            <input type="number" id="pedidoInput" placeholder="Digite o número do pedido">
+            <button onclick="incluirPedido()" class="btn">Incluir Pedido</button>
+        </div>
+
+        <div class="buttons">
+            <button onclick="atenderPedido()" class="btn btn-secondary">Atender Pedido</button>
+            <button onclick="listarPedidos()" class="btn btn-secondary">Listar Pedidos</button>
+            <button onclick="pesquisarPedido()" class="btn btn-secondary">Pesquisar Pedido</button>
+            <button onclick="encerrar()" class="btn btn-danger">Encerrar</button>
+        </div>
+        
+        <div id="output" class="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
